@@ -1,0 +1,31 @@
+package maggie;
+
+import java.util.TreeMap;;
+
+public class Demo_TreeMap {
+
+	public static void main(String[] args) {
+		TreeMap<Integer, String> tm = new TreeMap<Integer, String>();
+		tm.put(43, "Developer");
+		tm.put(3, "Tester");
+		tm.put(30, "Tech support");
+		tm.put(14, "Data Analyst");
+		tm.put(96, "Data Base");
+		tm.put(01, "System Architect");
+		tm.put(0, null);
+
+		System.out.println(tm);
+		System.out.println(tm.clone());
+		System.out.println(tm.containsKey(3));
+		System.out.println(tm.get(96));
+		System.out.println(tm.lastEntry());
+		System.out.println(tm.remove(0));
+		TreeMap<Double, Integer> tm1 = new TreeMap<Double, Integer>();
+	    tm1.put(34.3,8);
+	    tm1.put(22.02,74);
+	    System.out.println(tm1);
+	    System.out.println(tm1.floorKey(34.0));
+	    System.out.println(tm.ceilingKey(34));
+	}
+
+}
